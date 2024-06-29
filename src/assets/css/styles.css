@@ -1,0 +1,186 @@
+/*--------------------------------------*\
+  #REUSE STYLE
+\*--------------------------------------*/
+
+:root {
+    /**
+     * Colors
+     */
+
+    /* Primary */
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%); /* graphic design text */
+    --Dark-blue: hsl(198, 62%, 26%);             /* photography text */
+    --Dark-moderate-cyan: hsl(168, 34%, 41%);    /* footer */
+
+    /* Neutral */
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+
+    /**
+     * Typography
+     */
+
+    /* Body Copy */
+    --Font-size: 18px;
+
+    /* Font Family */
+    --font-family-barlow: "Barlow", sans-serif;
+    --font-family-fraunces: "Fraunces", serif;
+}
+
+
+
+
+
+/*--------------------------------------*\
+  #RESET
+\*--------------------------------------*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a,
+img,
+span,
+button { display: block; }
+
+a {
+    color: var(--Very-dark-desaturated-blue);
+    text-decoration: none;
+}
+
+img { height: auto; }
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--Font-size);
+    font-weight: bold;
+}
+
+body {
+    color: var(--Very-dark-desaturated-blue);
+    font-family: var(--font-family-barlow);
+    background-color: var(--White);
+}
+
+::selection {
+    background-color: var(--Yellow);
+    color: var(--White);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background-color: var(--White);
+}
+
+::-webkit-scrollbar-track { background-color: #eee; }
+
+::-webkit-scrollbar-thumb { background-color: var(--Dark-grayish-blue); }
+
+::-webkit-scrollbar-thumb:hover { background-color: var(--Very-dark-grayish-blue); }
+
+::-webkit-scrollbar-thumb:active { background-color: var(--Very-dark-desaturated-blue); }
+
+
+
+
+
+/*--------------------------------------*\
+  #DUBLICATE ITEM
+\*--------------------------------------*/
+
+.section { padding: 70px 0; }
+
+.container {
+    padding-inline: 16px;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.img-cover { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+/*--------------------------------------*\
+  #COMPONENT
+\*--------------------------------------*/
+
+/**
+ * BTN PRIMARY
+ */
+.btn-primary {
+    padding: 20px 30px;
+    border-radius: 100px;
+    background-color: var(--Yellow);
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: var(--font-family-fraunces);
+    font-weight: 600;
+    max-width: max-content;
+    margin: 0 auto;
+    transition: .4s;
+}
+
+.btn-primary:where(:hover, :focus-visible) {
+    opacity: 0.7;
+    color: var(--White);
+    transition: .4s;
+}
+
+
+
+
+
+/*--------------------------------------*\
+  #MEDIA
+\*--------------------------------------*/
+
+/**
+ * fit size 992px
+ */
+@media screen and (min-width: 992px) {
+    /* #DUBLICATE ITEM */
+    .section { padding: 100px 0; }
+
+    /* #COMPONENT */
+    .btn-primary {
+        padding: 15px 30px;
+        background-color: var(--White);
+        color: var(--Very-dark-desaturated-blue);
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0 0;
+    }
+    .btn-primary:where(:hover, :focus-visible) {
+        opacity: 0.7;
+        color: var(--White);
+        transition: .4s;
+    }
+}

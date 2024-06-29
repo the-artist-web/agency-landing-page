@@ -1,19 +1,12 @@
-# agency-landing-page
+<h1 align="center">Agency landing page</h1>
+<p align="center">This challenge will be a perfect test of your layout and responsive skills. There's a tiny bit of JS for the mobile menu, but the focus is HTML & CSS.</p>
 
-## Project setup
-```
-npm install
-```
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>VUE.JS</li>
+  <li>VUE CLI</li>
+</ul>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<h2>Demo Screeshots</h2>
+<img src="./design/desktop-preview.jpg">
